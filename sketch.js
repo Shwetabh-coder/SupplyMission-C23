@@ -87,6 +87,10 @@ function draw() {
 	  helicopterSprite.x = helicopterSprite.x-6;
 	//   packageSprite.x = helicopterSprite.x;
   }
+  if(helicopterSprite.y<packageSprite.y){
+	  packageSprite.x = packageBody.position.x;
+	  packageSprite.y = packageBody.position.y;
+  }
   drawSprites();
   
   
